@@ -1,0 +1,141 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before{
+    box-sizing:inherit ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(44,73,172);
+    background-image: linear-gradient(58deg, rgb(44 73 172/1) 0% ,rgb(86 192 255/1) 100%);
+}
+
+.contenedor{
+    height: 500px;
+    min-width: 500px;
+}
+
+.cien{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.one{
+    height: 80%;
+    width: 10%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 6%;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+    
+}
+
+.detalle{
+    height: 30%;
+    width: 8%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: 5px;
+    transform: rotate(50deg);
+
+}
+
+
+.cero-1{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -3%;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+    z-index: 1;
+
+}
+
+.cero-1::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+
+    background-color: rgb(44,73,172);
+    background-image: linear-gradient(58deg, rgb(44 73 172/1) 0% ,rgb(86 192 255/1) 100%);
+    z-index: 2;
+
+}
+.cero-2{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -3%;
+    filter: drop-shadow(1px 1px 9px #0000002f);
+
+}
+
+.cero-2::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+
+    background-color: rgb(44,73,172);
+    background-image: linear-gradient(58deg, rgb(44 73 172/1) 0% ,rgb(86 192 255/1) 100%);
+    z-index: 2;
+
+}
+
+.info{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info h1{
+    font-size: 10rem;
+    line-height: 70%;
+}
+
+.info p{
+    font-size: 3rem;
+    font-weight: bold;
+}
